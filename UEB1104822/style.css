@@ -1,0 +1,217 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+  }
+  
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00792e;
+    color: white;
+}
+.logo{
+    display: flex;
+}
+ .logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .logo img{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 5px;
+
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hero Section */
+.hero {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.808) 50%,rgba(0, 0, 0, 0.815) 50%), url('images/background.jpeg') center/cover no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero .btn {
+    background-color: #00792e;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .hero .btn:hover {
+    background-color: #00792e;
+  }
+
+
+  /* Main Content */
+.main-content {
+    padding: 40px 20px;
+  }
+  
+  .intro h2, .programs h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .programs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .program-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }  
+
+  .program-item p {
+    font-size: 1rem;
+  }
+  /* Footer */
+footer {
+    background-color: #00792e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  footer .social-links a:hover {
+    text-decoration: underline;
+  }
+
+ 
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    /* Header */
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #00792e;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        padding: 15px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    /* Hero Section */
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    /* Program Grid */
+    .programs-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    footer .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+  
